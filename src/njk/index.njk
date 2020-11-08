@@ -10,5 +10,11 @@
       <p>Hempen halter mizzenmast deadlights gaff pillage starboard jack lee Blimey draught. Man-of-war piracy black jack sutler Yellow Jack keel provost overhaul execution dock rigging. Log quarterdeck dead men tell no tales red ensign gibbet grog blossom bilge Nelsons folly code of conduct gunwalls.</p>
     </div>
   </div>
+  <div class="row">
+    <div class="col-md-8 offset-md-2">
+    {% for blog in blog.blogs %}
+    <h2> {{ blog.headline}} </h2>
+    <p><a href="blog/{{ blog.slug }}.html"> {{blog.date}}</a></p>
+    {% endfor %}
 </div>
 {% endblock %}
